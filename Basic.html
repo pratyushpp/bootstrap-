@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Basic.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -19,32 +23,90 @@
 <body>
 
     
-  <nav class="navbar navbar-dark  navbar-full">
-        <a  href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-        <a href="../DUMY FILES/WEBHTML.HTML">HTML</a>
-        <a href="#">CSS</a>
-        <a href="#">JAVASCRIPT</a>
-        <a href="#">PHP</a>
-        <div class="MORE">
-           <button class="dropbtn">MORE
-             <i class="fa fa-caret-down"></i>
-           </button>
-           <div class="dropdown-content">
-             <a href="#">PHP</a>
-             <a href="#">MYSQL</a>
-             <a href="#">RDBMS</a>
-           </div>
-         </div> 
-      <a class="active" href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
-     </nav> 
+  
+       
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark  navbar-full ">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><i class="fa fa-fw fa-home"></i>HOME</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="WEBHTML.HTML">HTML </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">CSS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">PHP</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">JAVA</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        MORE
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">MY SQL</a>
+        <a class="dropdown-item" href="#">JAVASCRIPT</a>
+        <a class="dropdown-item" href="#">DBMS</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-fw fa-user"></i>LOGIN</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-fw fa-envelope"></i> CONTACT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-fw fa-search"></i>SEARCH</a>
+    </li>
+  </ul>
+</nav>
 
 <div class="jumbotron text-center">
   <h1>LEARNING SCHOOL</h1>
   <p>is an educational website for learning web technologies online.Content includes tutorials and references relating to HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, SQL, Bootstrap, Node.js, jQuery, XQuery, AJAX, and XML.
   </p> 
 </div>
+
+<div class="container">
+  <h3> DIALOG BOX</h3>
+\
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Refer
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">LEARNING</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          You will find tutorials of all languages.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+        </div>
+     </div>
+    </div>
+  
+
   
 <div class="container">
   <div class="row">
